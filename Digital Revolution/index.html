@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dwayne Meintjes" />
+    <meta name="description" content="Sound At It's Best!" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Digital Revolution - The Sound Revolution</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      crossorigin=""
+    ></script>
+  </head>
+
+  <body>
+    <!--Back to Top button-->
+    <button id="back-to-top" class="back-to-top" title="Back to top">
+      <span class="arrow-up"></span>
+    </button>
+
+    <div id="loader" class="loader">
+      <div class="spinner"></div>
+    </div>
+    <header class="header">
+      <a href="#">
+        <img
+          class="logo"
+          src="resources/img/logo.png"
+          alt="Digital Revolution Logo"
+        />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">Home</a></li>
+          <li><a class="main-nav-link" href="#about-us">Meet Us</a></li>
+          <li><a class="main-nav-link" href="#our-store-id">Our Store</a></li>
+          <li><a class="main-nav-link" href="#contact-us-id">Contact Us</a></li>
+          <li><a class="main-nav-link nav-more" href="#">More</a></li>
+        </ul>
+      </nav>
+
+      <div class="more-overlay" id="moreOverlay">
+        <div class="more-card">
+          <button class="close-button" id="closeButton">&times;</button>
+          <ul>
+            <li>
+              <a
+                href="installations.html"
+                style="font-size: 48px"
+                target="_self"
+                ><strong>01 - Installations</strong></a
+              >
+            </li>
+            <li>
+              <a href="hometheater.html" style="font-size: 48px" target="_self"
+                ><strong>02 - Home Theater</strong></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="store-image-section">
+      <div class="container-header">
+        <div class="store-image-wrapper">
+          <img src="resources/img/home2.JPG" alt="Store Image" />
+          <div class="overlay"></div>
+          <div class="text-wrapper">
+            <h2 class="animate-header">
+              <span>Digital Revolution -</span>
+              <span>The Sound Revolution</span>
+            </h2>
+            <p class="animate-slogan">Let the music move you</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-store-section" id="our-store-id">
+      <div class="container">
+        <h1 class="storeHeading" style="font-size: 40px">Our Store</h1>
+        <p class="ourStore-text">
+          When you visit us for the first time, you will sense that it is a
+          special place, created by special people, doing what they do in the
+          best possible way to create an awesome experience! Our shop is one of
+          the few in the country that can boast a proper demonstration room.
+          This means that you can sit in luxury and comfort to experience a
+          system before you purchase. You should never just buy boxes...We will
+          definitely be able to provide you with the necessary information to
+          make an informed decision. If a product doesn't work properly it's
+          expensive. If it does what you need it do, it's the right price.
+        </p>
+        <div class="gallery">
+          <div class="gallery-item animate-gallery">
+            <img src="resources/img/ourS1.JPG" alt="Gallery Image 1" />
+          </div>
+          <div class="gallery-item animate-gallery">
+            <img src="resources/img/ourS2.JPG" alt="Gallery Image 2" />
+          </div>
+          <div class="gallery-item animate-gallery">
+            <img src="resources/img/ourS3.JPG" alt="Gallery Image 3" />
+          </div>
+          <div class="gallery-item animate-gallery">
+            <img src="resources/img/ourS4.JPG" alt="Gallery Image 4" />
+          </div>
+          <div class="gallery-item animate-gallery">
+            <img src="resources/img/back.JPG" alt="Gallery Image 5" />
+          </div>
+          <div class="gallery-item animate-gallery">
+            <img src="resources/img/home1.JPG" alt="Gallery Image 6" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="about-us-container">
+      <section id="about-us">
+        <h1 class="aboutUsHeader" style="font-size: 40px">Who We Are</h1>
+        <p style="font-size: 20px">
+          We are a bunch of dedicated audio enthusiasts with tremendous amounts
+          of energy, excitement, and passion! We are in the business of helping
+          you create and put together sound systems for your home! To create a
+          sound experience of your life, at a price that won't break the bank.
+        </p>
+
+        <h2 style="font-size: 33px">Our Mission</h2>
+        <p style="font-size: 20px">
+          At Digital Revolution, we are a team of dedicated and highly skilled
+          professionals, passionate about delivering the best possible audio
+          solutions to our clients. Our expertise spans across various aspects
+          of the sound industry including design, and installation.
+        </p>
+
+        <h2 style="font-size: 33px">The Team</h2>
+        <img
+          src="resources/img/about-main.JPG"
+          alt="Team Photo"
+          id="team-photo"
+        />
+
+        <h3 style="font-size: 33px">Experience & Innovation</h3>
+        <p style="font-size: 20px">
+          With over 20 years of experience in the field, we have honed our craft
+          and are committed to staying up-to-date with the latest advancements
+          in audio technology. Our team takes great pride in ensuring that our
+          clients receive high-quality, innovative, and tailor-made solutions to
+          meet their specific requirements.
+        </p>
+        <h3 style="font-size: 33px">Diverse Portfolio</h3>
+        <p style="font-size: 20px">
+          Throughout the years, we have had the privilege of working with a
+          diverse range of clients, from independent artists and small
+          businesses to large corporations and event organizers. This has
+          allowed us to develop a deep understanding of the unique challenges
+          faced by different sectors within the sound industry, enabling us to
+          provide targeted and effective solutions for each project we
+          undertake.
+        </p>
+        <h3 style="font-size: 33px">Customer Service Excellence</h3>
+        <p style="font-size: 20px">
+          At Digital Revolution, we believe that excellent customer service is
+          the cornerstone of our success. Our team is always on hand to provide
+          expert advice and support, ensuring that our clients are fully
+          satisfied with the end result. We look forward to collaborating with
+          you on your next audio project and helping you achieve the highest
+          level of sound quality possible.
+        </p>
+      </section>
+    </div>
+
+    <div class="contact-wrapper">
+      <section class="contact-us" id="contact-us-id">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <div class="contact-content">
+            <div class="map-container">
+              <div id="mapid"></div>
+            </div>
+            <div class="contact-form-container">
+              <form id="contact-form" method="post" action="">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <button type="submit" value="Submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="store-info">
+              <p><strong>Phone:</strong> 014-592-6147</p>
+              <p>
+                <strong>Email:</strong>
+                <a href="mailto:sales@digital-revolution.co.za"
+                  >sales@digital-revolution.co.za</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo-container">
+          <a href="#" class="footer-logo">
+            <img alt="Digital Revolution Logo" src="resources\img\logo.png" />
+          </a>
+          <p class="copyright">
+            Copyright &copy; <span class="year">2023</span> by Digital
+            Revolution. All rights reserved
+          </p>
+        </div>
+        <div class="footer-contact">
+          <p class="footer-heading">Contact Us</p>
+          <address>
+            Shop 22 Lifestyle Square, 2nd Floor, Beyers Naude Drive, Rustenburg,
+            0299<br />
+            <span class="footer-link">Tel:</span> 014-592-6147<br />
+            <span class="footer-link">Email:</span>
+            <a href="mailto:sales@digital-revolution.co.za" class="footer-link"
+              >sales@digital-revolution.co.za</a
+            >
+          </address>
+        </div>
+        <ul class="social-links-footer">
+          <li>
+            <a
+              class="footer-link"
+              target="_blank"
+              href="https://www.facebook.com/hometheatresa/"
+            >
+              <ion-icon
+                class="social-icon-footer"
+                name="logo-facebook"
+              ></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+
+    <!--Scroll back to top animation-->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const backToTopButton = document.getElementById("back-to-top");
+
+        window.addEventListener("scroll", () => {
+          if (window.pageYOffset > 300) {
+            backToTopButton.style.display = "block";
+          } else {
+            backToTopButton.style.display = "none";
+          }
+        });
+
+        backToTopButton.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+    <!-------------------------------------------------->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Fade-in animation for all elements
+        gsap.from("#about-us *", {
+          duration: 1,
+          opacity: 0,
+          stagger: 0.15,
+          delay: 0.5,
+        });
+
+        // Animate the team photo
+        const img = document.querySelector("#team-photo");
+        const imgObserver = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                gsap.from(img, {
+                  duration: 1,
+                  x: -200,
+                  opacity: 0,
+                  ease: "power2.out",
+                });
+                observer.unobserve(img);
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+
+        imgObserver.observe(img);
+
+        // Parallax effect for the headings
+        const parallax = (e) => {
+          gsap.to("#about-us h1, #about-us h2, #about-us h3", {
+            x: (e.clientX / window.innerWidth) * 20 - 10,
+            y: (e.clientY / window.innerHeight) * 20 - 10,
+            ease: "slow",
+            duration: 0.5,
+          });
+        };
+
+        // Add event listener for mouse movement
+        document.addEventListener("mousemove", parallax);
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+      var map = L.map("mapid").setView(
+        [-25.67602511931081, 27.237847010969485],
+        16
+      );
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution:
+          'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+        maxZoom: 18,
+      }).addTo(map);
+      L.marker([-25.67602511931081, 27.237847010969485])
+        .addTo(map)
+        .bindPopup(
+          "<b>Digital Revolution</b><br/>Shop 22 Lifestyle Square, 2nd Floor<br/>Beyers Naude Drive<br/>Rustenburg<br/>0299"
+        )
+        .openPopup();
+    </script>
+  </body>
+</html>
